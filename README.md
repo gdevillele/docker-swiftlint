@@ -7,17 +7,11 @@ Build context for a SwiftLint docker container.
 ### Use image from registry
 
 ```
-docker run -v `pwd`:`pwd` -w `pwd` gaetan/swiftlint:0.25.1 swiftlint lint
+docker run --rm -v `pwd`:/project -w /project gaetan/swiftlint:0.25.1 swiftlint lint
 ```
 
 ### Build image
 
 ```
-make image
-```
-
-### Clean built image
-
-```
-make clean
+./build-image.sh
 ```
