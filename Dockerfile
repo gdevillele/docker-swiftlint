@@ -1,7 +1,7 @@
 FROM swift:4.1
 
 # git tag to checkout
-ENV SWIFTLINT_REVISION="0.25.1"
+ENV SWIFTLINT_REVISION="0.27.0"
 
 # Install SwiftLint
 RUN git clone https://github.com/realm/SwiftLint.git && \
